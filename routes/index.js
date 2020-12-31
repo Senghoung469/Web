@@ -59,7 +59,7 @@ router.post('/api/v1/uploader', cors(), multipartMiddleware, function(req, res) 
       }else{
         res.status(200).json({
           uploaded:true,
-          url: `${baseUrl}/uploads/posts/${tempFile.originalFilename}`
+          url: `${baseUrl}/uploads/${tempFile.originalFilename}`
       })
         return console.log(req.files);
       }
