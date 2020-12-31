@@ -51,13 +51,13 @@ class Home extends React.Component {
                                 <span style={{fontSize: "25px", fontWeight: "bold", color: "gray"}}> Cosmetics Of </span>
                                 <span style={{fontSize: "25px", fontWeight: "bold", color: "gray"}}> Consultant Association</span>
 
-                                <p style={{fontSize: "25px", fontWeight: "bold", marginBottom: "10px", position: "relative", left: "235px", lineHeight: "2"}}>ព្រះរាជាណាចក្រកម្ពុជា</p>
+                                {/* <p style={{fontSize: "25px", fontWeight: "bold", marginBottom: "10px", position: "relative", left: "235px", lineHeight: "2"}}>ព្រះរាជាណាចក្រកម្ពុជា</p>
                                 <p style={{fontSize: "25px", fontWeight: "bold", marginBottom: "10px", position: "relative", left: "212px", lineHeight: "2"}}>ជាតិ សាសនា​ ព្រះមហាក្សត្រ</p>
                                 <p style={{position: "relative", left: "320px", fontSize: "18px", lineHeight: "2"}}>លក្ខន្តិកៈ</p>
                                 <p style={{position: "relative", left: "200px", fontSize: "18px", lineHeight: "2"}}>Cosmetics of Consultant Association</p>
                                 <p style={{position: "relative", left: "320px", fontSize: "18px", lineHeight: "2"}}>C.C.A</p>
                                 <p style={{position: "relative", left: "320px", fontSize: "18px", lineHeight: "2"}}>ជំពូកទី១</p>
-                                <p style={{position: "relative", left: "252px", fontSize: "18px", lineHeight: "2"}}>អំពីគោលបំណង និងបេសកម្ម</p>
+                                <p style={{position: "relative", left: "252px", fontSize: "18px", lineHeight: "2"}}>អំពីគោលបំណង និងបេសកម្ម</p> */}
 
                                 <p style={{fontSize: "25px", fontWeight: "bold", marginBottom: "10px", position: "relative", lineHeight: "2"}}>ប្រការ១៖ គោលបំណង</p>
 
