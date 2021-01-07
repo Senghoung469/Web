@@ -3,6 +3,18 @@ import axios from 'axios';
 import ServiceApi from '../Service';
 import ScrollUpButton from "react-scroll-up-button"; //Add this line
 import 'bootstrap/dist/css/bootstrap.min.css';
+import {
+    Navbar,
+    Nav,
+    NavDropdown,
+    Form,
+    FormControl,
+    Button,
+    Col,
+    Row,
+    Container,
+    ContainerFluid
+} from 'react-bootstrap';
 
 class Header extends React.Component {
     
@@ -23,41 +35,28 @@ class Header extends React.Component {
     render(){
         return(
             <>
-                <div className="header-top">
-                    <div className="row">
-                         <div className="col-md-12">
-                             <div className="row">
-                                 <div className="col-md-6">
-                                    <div className="logo">
-                                        <img src="assets/img/logo/logo.jpg" />
-                                    </div>
-                                 </div>
-                                 <div className="col-md-6">
-                                    <div className="logo">
-                                        <ul className="menu-top">
-                                            <li className="active">
-                                                <a href="#">Home</a>
-                                            </li>
-                                            <li>
-                                                <a href="#">Our People</a>
-                                            </li>
-                                            <li>
-                                                <a href="#">Our Work</a>
-                                            </li>
-                                            <li>
-                                                <a href="#">Contact Us</a>
-                                            </li>
-                                            <li>
-                                                <a href="#">About Us</a>
-                                            </li>
-                                            <li>
-                                                <a href="#">Publication</a>
-                                            </li>
-                                        </ul>
-                                    </div>
-                                 </div>
-                             </div>
-                         </div>
+                <div>
+                    <div className="header-top">
+                        <Row>
+                            <Col xs={12} md={12}>
+                                <Navbar bg="light" expand="lg" className="fixed-top">
+                                    <Navbar.Brand href="#home"><img className="logo-top" src="assets/img/logo/logo.jpg" /></Navbar.Brand>
+                                    <Navbar.Toggle aria-controls="responsive-navbar-nav" />
+                                    <Navbar.Collapse id="responsive-navbar-nav">
+                                        <Nav className="mr-auto"></Nav>
+                                        <Nav>
+                                            <Nav.Link href="home">Home</Nav.Link>
+                                            <Nav.Link href="ourpeople">Our People</Nav.Link>
+                                            <Nav.Link href="ourwork">Our Works</Nav.Link>
+                                            <Nav.Link href="product">Products</Nav.Link>
+                                            <Nav.Link href="contact">Contact Us</Nav.Link>
+                                            <Nav.Link href="about">About Us</Nav.Link>
+                                            <Nav.Link href="publication">Publication</Nav.Link>
+                                        </Nav>
+                                    </Navbar.Collapse>
+                                </Navbar>
+                            </Col>
+                        </Row>
                     </div>
                 </div>
             </>

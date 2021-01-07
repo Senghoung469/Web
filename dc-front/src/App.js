@@ -16,14 +16,14 @@ function App() {
     <main>
       <Switch>
           <Route path="/" component={Home} exact />
-          <Route path="/index/home" component={Home} />
-          <Route path="/index/product" component={Product} exact />
-          <Route path="/index/ourpeople" component={Ourpeople} exact />
-          <Route path="/index/detail/:id" component={Detail} exact />
-          <Route path="/index/about" component={About} exact />
-          <Route path="/index/contact" component={Contact} exact />
-          <Route path="/index/publication" component={Publication} exact />
-          <Route path="/index/ourwork" component={Ourwork} exact />
+          <Route path="/home" component={Home} />
+          <Route path="/product" component={Product} exact />
+          <Route path="/ourpeople" component={Ourpeople} exact />
+          <Route path="/detail/:id" component={Detail} exact />
+          <Route path="/about" component={About} exact />
+          <Route path="/contact" component={Contact} exact />
+          <Route path="/publication" component={Publication} exact />
+          <Route path="/ourwork" component={Ourwork} exact />
           <Route component={NotFound} />
       </Switch>
     </main>

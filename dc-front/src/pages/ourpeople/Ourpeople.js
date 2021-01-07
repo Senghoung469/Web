@@ -6,12 +6,18 @@ import DetailOurPeople from '../../layouts/DetailOurPeople';
 class Ourpeople extends React.Component {
     render(){
         return(
-            <>
+            <div style={{
+                backgroundImage: "url('assets/img/backround.jpg')",
+                backgroundColor: "#cccccc",
+                backgroundRepeat: "no-repeat",
+                backgroundSize: "cover",
+                backgroundAttachment: "fixed"
+                }}>
             <Header />
             <br/>
-            <DetailOurPeople />
+                <DetailOurPeople />
             <Footer />
-            </>
+            </div>
         );
     }
 }
