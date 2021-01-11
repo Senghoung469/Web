@@ -16,11 +16,11 @@
 	font-size: 10px;
 	text-shadow: none; /* fix some user styles */
 
-	box-shadow: 0px 0px 10px gray;
+	box-shadow: 0px 0px 0px #cccccc;
 
-	border-radius: 30px; 
-	-moz-border-radius:20px;
-	-webkit-border-radius:30px;
+	border-radius: 6px; 
+	-moz-border-radius:6px;
+	-webkit-border-radius:6px;
 
 	/* reset box-sizing (to boostrap friendly) */
 	-webkit-box-sizing: content-box;
@@ -206,20 +206,20 @@
 #wowslider-container1  .ws_bullets { 
 	padding: 9px; 
 }
-#wowslider-container1 .ws_bullets a { 
+/* #wowslider-container1 .ws_bullets a { 
 	width:10px;
 	height:10px;
 	background: url(./bullet.png) left top;
 	float: left; 
-	text-indent: -4000px; 
+	text-indent: -4000px;
 	position:relative;
 	margin-left:5px;
 	color:transparent;
-}
-#wowslider-container1 .ws_bullets a:hover, #wowslider-container1 .ws_bullets a.ws_selbull{
+} */
+/* #wowslider-container1 .ws_bullets a:hover, #wowslider-container1 .ws_bullets a.ws_selbull{
 	background-position: 0 100%;
-}
-#wowslider-container1 a.ws_next, #wowslider-container1 a.ws_prev {
+} */
+/* #wowslider-container1 a.ws_next, #wowslider-container1 a.ws_prev {
 	position:absolute;
 	top:50%;
 	margin-top:-1.3em;
@@ -228,15 +228,15 @@
 	width: 2.7em;
 	background-image: url(./arrows.png);
 	background-size: 200%;
-}
-#wowslider-container1 a.ws_next{
+} */
+/* #wowslider-container1 a.ws_next{
 	background-position: 100% 0;
 	right:1em;
-}
-#wowslider-container1 a.ws_prev {
+} */
+/* #wowslider-container1 a.ws_prev {
 	background-position: 0 0; 
 	left:1em;
-}
+} */
 
 /*playpause*/
 #wowslider-container1 .ws_playpause {
@@ -252,11 +252,11 @@
 }
 
 #wowslider-container1 .ws_pause {
-    background-image: url(./pause.png);
+    /* background-image: url(./pause.png); */
 }
 
 #wowslider-container1 .ws_play {
-    background-image: url(./play.png);
+    /* background-image: url(./play.png); */
 }
 
 #wowslider-container1 .ws_pause:hover, #wowslider-container1 .ws_play:hover {
@@ -305,9 +305,9 @@
 @-webkit-keyframes wsBasic{0%{left:-0%} 15.94%{left:-0%} 20%{left:-100%} 35.94%{left:-100%} 40%{left:-200%} 55.94%{left:-200%} 60%{left:-300%} 75.94%{left:-300%} 80%{left:-400%} 95.94%{left:-400%} }
 
 #wowslider-container1 .ws_images img, #wowslider-container1 .ws_effect img, #wowslider-container1 .ws_effect>* {
-    border-radius: 30px; 
-	-moz-border-radius:20px;
-	-webkit-border-radius:30px;
+    border-radius: 6px; 
+	-moz-border-radius:6px;
+	-webkit-border-radius:6px;
 }
 #wowslider-container1 .ws_bullets  a img{
 	text-indent:0;

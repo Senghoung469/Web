@@ -1,8 +1,9 @@
 import React from 'react';
 import axios from 'axios';
 import ServiceApi from '../Service';
-import ScrollUpButton from "react-scroll-up-button"; //Add this line
+import ScrollUpButton from "react-scroll-up-button";
 import 'bootstrap/dist/css/bootstrap.min.css';
+import $ from "jquery";
 import {
     Navbar,
     Nav,
@@ -25,16 +26,28 @@ class Header extends React.Component {
         }
     }
 
-    // componentDidMount(){
-    //     // Get Companies All
-    //     axios.get(`${ServiceApi}/api/v1/company/1`).then( respone => {
-    //         this.setState({ companies: respone.data.data });
-    //     }).catch( error =>  console.log(error))
-    // }
+    componentDidMount(){
+        // Get Companies All
+        // axios.get(`${ServiceApi}/api/v1/company/1`).then( respone => {
+        //     this.setState({ companies: respone.data.data });
+        // }).catch( error =>  console.log(error))
+
+        $(document).ready(function($) {
+            // site preloader -- also uncomment the div in the header and the css style for #preloader
+           $('#preloader').fadeOut('slow',function(){
+               $(this).remove();
+           });
+
+           $('.ScrollUpButton__Container').on('click', function(){
+                 window.scrollTo({top: 0, behavior: 'smooth'});
+           })
+       });
+    }
 
     render(){
         return(
             <>
+            <div id="preloader"></div>
                 <div>
                     <div className="header-top">
                         <Row>
@@ -57,6 +70,17 @@ class Header extends React.Component {
                                 </Navbar>
                             </Col>
                         </Row>
+                        <ScrollUpButton
+                        id="scrollTop"
+                        StopPosition={0}
+                        ShowAtPosition={150}
+                        EasingType='easeOutCubic'
+                        AnimationDuration={0}
+                        ContainerClassName='ScrollUpButton__Container'
+                        TransitionClassName='ScrollUpButton__Toggled'
+                        style={{}}
+                        ToggledStyle={{}}
+                        />
                     </div>
                 </div>
             </>

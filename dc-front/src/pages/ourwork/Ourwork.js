@@ -5,6 +5,24 @@ import axios from 'axios';
 import ServiceApi from '../../Service';
 import { Col, Row } from 'react-bootstrap';
 
+import { bounce, slideInLeft, zoomIn, fadeInDown } from 'react-animations';
+import Radium, {StyleRoot} from 'radium';
+
+const styles = {
+    slideInLeft: {
+      animation: 'x 1s',
+      animationName: Radium.keyframes(slideInLeft, 'slideInLeft')
+    },
+    zoomIn: {
+        animation: 'x 3s',
+        animationName: Radium.keyframes(zoomIn, 'zoomIn')
+      },
+      fadeInDown: {
+        animation: 'x 1s',
+        animationName: Radium.keyframes(fadeInDown, 'fadeInDown')
+      }
+  }
+
 class Ourwork extends React.Component {
 
     constructor(props){
@@ -47,12 +65,20 @@ class Ourwork extends React.Component {
                     </Col>
 
                     <Col md={6}>
-                        <img className="home-banner" style={{marginTop: "32em"}} src="assets/img/ourworkone.png"/>
+                        <StyleRoot>
+                                <div className="test" style={styles.zoomIn}>
+                                  <img className="home-banner" style={{marginTop: "20em"}} src="assets/img/002.png"/>
+                                </div>
+                        </StyleRoot>
                     </Col>
                 </Row>
                 <Row>
                     <Col md={6}>
-                        <img className="home-banner" style={{marginTop: "25em"}} src="assets/img/002.png"/>
+                    <StyleRoot>
+                            <div className="test" style={styles.zoomIn}>
+                                <img className="home-banner" style={{marginTop: "32em"}} src="assets/img/ourworkone.png"/>
+                            </div>
+                        </StyleRoot>
                     </Col>
                     <Col md={6}>
                         <div className="ourwork-one" style={{position: "absolute", marginLeft: "-30px", top: "18em"}}>
@@ -68,7 +94,8 @@ class Ourwork extends React.Component {
                 </Row>
             </section>
             <Footer />
-            <br/><br/><br/><br/><br/>
+            <br/><br/><br/><br/>
+            <br/><br/><br/><br/>
             </div>
         )
     }

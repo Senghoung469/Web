@@ -30,11 +30,11 @@ class DetailOurPeople extends React.Component {
                                     </div>
                                 </Col>
                                 <Col md={6}>
-                                    <div className="ourpeople-content">
+                                    <div className="ourpeople-content" style={{fontFamily: "Khmer OS Bokor"}}>
                                         <p style={{fontSize: "50px", textAlign: "center", marginLeft: "-8em", lineHeight: "3"}}>តេង ប៊ុនថុន</p>
                                         <p style={{fontSize: "20px", textAlign: "center", marginLeft: "-21em"}}>ប្រធានក្រុមប្រឹក្សាភិបាល</p>
                                         <p style={{fontSize: "20px", textAlign: "center", marginLeft: "-19em"}}>លេខទូរស័ព្ទ ៖ 012 320 320</p>
-                                        <p style={{fontSize: "20px", textAlign: "center", marginLeft: "-14.4em"}}>អ៊ីម៉ែល ៖ <a href="mailto:board@ccacambodia.org.kh">board@ccacambodia.org.kh</a></p>
+                                        <p style={{fontSize: "20px", textAlign: "center", marginLeft: "-13.6em"}}>អ៊ីម៉ែល ៖ <a href="mailto:board@ccacambodia.org.kh">board@ccacambodia.org.kh</a></p>
                                     </div>
                                 </Col>
                             </Row>
