@@ -23,7 +23,7 @@
     flex-wrap: wrap;
     justify-content: space-between;
     box-shadow: 0px -1px 5px grey;
-    height: 8vh;
+    height: 10vh;
     align-items: center;
 }
 .footer-menu {
@@ -69,17 +69,18 @@
     padding-top: 1em;
 }
 
-@media only screen and (min-width: 1000px) {
+/* Big screen  */
+@media only screen and (min-width: 1280px) {
     .logo-top {
         width: 440px;
         padding-left: 50px;
     }
     .home-banner{
-        width: 82%;
+        width: 80%;
         display: block;
         margin-top: 15em;
         position: relative;
-        left: 5em;
+        left: 8em;
     }
     .home-text{
         text-transform: uppercase;
@@ -108,14 +109,7 @@
         color: rgb(116, 116, 116);
         display: inline;
     }
-    hr:not([size]) {
-        height: 5px;
-        /* background: #0a58ca; */
-        width: 555px;
-        padding: 0px;
-        margin: 0px;
-        border: solid 1px blue;
-    }
+
     .home-text-group {
         margin-top: 15em;
         margin-left: 4em;
@@ -138,38 +132,119 @@
     }
 
     .ourpeople-area {
-        box-shadow: 0px 0px 5px 0px #cccccc;
+        box-shadow: #cccccc 0px 0px 0px 0px;
         border-radius: 1em;
         margin: 0 auto;
-        max-width: 80%;
         position: relative;
+        left: 8em;
         height: 50vh;
         top: 10em;
-        background-color: white;
+        background-color: #f9f9fb;
     }
 
     .img-thumbnail-ourpeople{
         max-width: 80%;
-        height: 70%;
-        box-shadow: 5px 5px 50px #cccccc;
+        height: 60%;
+        box-shadow: 0px 1px 0px #cccccc;
         position: absolute;
         top: 75px;
         right: 10em;
-        border: solid 2px white;
+        border: 2px solid white;
     }
     .ourpeople-content{
         margin-top: 10%;
         align-items: center;
-        margin-left: -150px;
+        margin-left: -20px;
         color: gray;
+        text-align: justify;
     }
     .partner{
         font-size: 40px;
         z-index: 10;
         position: absolute;
         top: 3em;
-        margin-left: 4em;
+        margin-left: 3em;
         font-weight: bold;
         color: gray;
     }
-  }  
+    .ourwork-one{
+        margin: 0;
+        /* margin-top: 10em; */
+        padding: 50px;
+        background: #f9f9fb;
+        margin-top: 10em;
+        position: absolute;
+        /* left: 10em; */
+        text-align: justify;
+        align-items: center;
+        /* opacity: 0.5; */
+        border-radius: 15px;
+        box-sizing: border-box;
+        box-shadow: #cccccc 0px 0px 0px 0px;
+        border: 0px solid #cccccc;
+        /* top: -90px; */
+        margin-left: 8em;
+        width: 42em;
+        line-height: 2;
+    }
+    .banner-contact {
+        width: 400px;
+        position: relative;
+        left: 3em;
+        top: 12em;
+        z-index: 1;
+        box-shadow: 0px 0px 1px 0px black;
+    }
+  }
+
+  @media only screen and (width: 1280px) {
+    .banner-contact {
+        width: 350px;
+        position: relative;
+        left: 3em;
+        top: 12em;
+        z-index: 1;
+        box-shadow: 0px 0px 1px 0px black;
+    }
+    .ourwork-one {
+        margin: 0;
+        /* margin-top: 10em; */
+        padding: 20px;
+        background: #f9f9fb;
+        margin-top: 10em;
+        position: absolute;
+        /* left: 10em; */
+        text-align: justify;
+        align-items: center;
+        /* opacity: 0.5; */
+        border-radius: 15px;
+        box-sizing: border-box;
+        box-shadow: #cccccc 0px 0px 0px 0px;
+        border: 0px solid #cccccc;
+        /* top: -90px; */
+        margin-left: 6em;
+        width: 42em;
+        line-height: 2;
+    }
+  }
+
+  .ml10 {
+    position: relative;
+    font-weight: 900;
+    font-size: 4em;
+  }
+  
+  .ml10 .text-wrapper {
+    position: relative;
+    display: inline-block;
+    padding-top: 0.2em;
+    padding-right: 0.05em;
+    padding-bottom: 0.1em;
+    overflow: hidden;
+  }
+  
+  .ml10 .letter {
+    display: inline-block;
+    line-height: 1em;
+    transform-origin: 0 0;
+  }
