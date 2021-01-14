@@ -563,9 +563,10 @@
         text-align: justify;
         line-height: 3.5;
         position: relative;
-        top: 8px;
-        right: 3em;
+        top: -8px;
         padding-top: 30px;
+        padding-left: 0px;
+        right: 3.4em;
     }
     .ourpeople-group-thumnail {
         font-size: 16px;
@@ -1137,7 +1138,7 @@
 }
 
 /* // Extra large devices (large desktops, 1200px and up) */
-@media (min-width: 1200px) {
+@media (min-width: 1200px){
     #preloader { 
         position: fixed; 
         left: 0; 
@@ -1247,15 +1248,15 @@
         position: relative;
         top: -8px;
         padding-top: 30px;
-        padding-left: 55px;
-        right: 4.4em;
+        padding-left: 0px;
+        right: 3em;
     }
     .ourpeople-group-thumnail {
-        font-size: 16px;    
+        font-size: 16px;
         padding-left: 55px;
         line-height: 1.5;
         position: relative;
-        right: 8em;
+        right: 9em;
     }
     .ourpeople-area {
         background: white;
@@ -1339,9 +1340,9 @@
         margin-top: 20px;
     }
     .contact-content-box {
-        font-size: 17px;
+        font-size: 15px;
         line-height: 1.8;
-    }
+    }    
     .contact-img{
         width: 100%;
     }
