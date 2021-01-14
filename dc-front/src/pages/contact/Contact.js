@@ -5,7 +5,7 @@ import axios from 'axios';
 import ServiceApi from '../../Service';
 import { Col, Row } from 'react-bootstrap';
 
-import GoogleMapReact from 'google-map-react';
+import FontAwesome from 'react-fontawesome'
 
 import { bounce, slideInLeft, zoomIn, fadeInDown } from 'react-animations';
 import Radium, {StyleRoot} from 'radium';
@@ -42,49 +42,88 @@ class Contact extends React.Component {
     render(){
         return (
             <div>
-            <Header />
+            <Header style={{
+                backgroundImage: "url('assets/img/backround.jpg')",
+                backgroundColor: "#cccccc",
+                backgroundRepeat: "no-repeat",
+                backgroundSize: "cover",
+                backgroundAttachment: "fixed"
+                }}/>
+            <br/><br/>
             <section className="container-fluid">
                 <Row>
-                    <Col md={6}>
+                    <Col md={12} xs={12}>
                         <Row>
-                            <Col className="partner">
-                                <span style={{fontSize: "50px"}}>C</span>
-                                <span>ONTACT US</span>
+                            <Col md={12} xs={12} sm={12}>
+                                <Row>
+                                    <Col className="partner">
+                                        <span style={{fontSize: "50px"}}>C</span>
+                                        <span>ONTACT US</span>
+                                    </Col>
+                                </Row>
+                                <div className="heightline-contact"/>
                             </Col>
                         </Row>
-                        <div style={{position: "relative", top: "8em", borderLeft: "500px solid #034fb3", height: "4px", marginLeft: "7.5em"}} />
                         <Row>
-                            <Col md={6} xs={6} sm={6}>
-                                <div className="ourwork-one">
-                                        <p style={{fontSize: "20px"}}>អាសយដ្ឋាន ៖ </p>
-                                        <p style={{fontSize: "20px"}}>ផ្ទះលេខ៤៥អ៊ី៨E2 ផ្លូវ វត្ថអង្គតាមិញ សង្កាត់កាកាប១ ខណ្ឌពោធិ៍សែនជ័យ រាជធានីភ្នំពេញ</p>
+                            <Col md={4} xs={12} sm={12}>
+                                <div className="contact-box">
+                                    <FontAwesome
+                                        className="super-crazy-colors"
+                                        name="map"
+                                        // cssModule={faStyles}
+                                        size="3x"
+                                        // spin
+                                        style={{ textShadow: '0 4px 0 rgba(0, 0, 0, 0.1)', color: "#4764ad" }}
+                                    />
+                                    <p className="contact-title">អាសយដ្ឋាន ៖ </p>
+                                    <div className="contact-content-box">
+                                       <p>ផ្ទះលេខ៤៥អ៊ី៨E2 ផ្លូវ វត្ថអង្គតាមិញ សង្កាត់កាកាប១ ខណ្ឌពោធិ៍សែនជ័យ រាជធានីភ្នំពេញ</p>
+                                    </div>
+                                </div>
+                            </Col>
+                            <Col md={4} xs={12} sm={12}>
+                                <div className="contact-box">
+                                    <FontAwesome
+                                        className="super-crazy-colors"
+                                        name="phone"
+                                        // cssModule={faStyles}
+                                        size="3x"
+                                        // spin
+                                        style={{ textShadow: '0 4px 0 rgba(0, 0, 0, 0.1)', color: "#4764ad" }}
+                                    />
+                                    <p className="contact-title">ទូរសព្ទ័លេខ ៖ </p>
+                                    <div className="contact-content-box">
+                                        <p>012589111</p>
+                                        {/* <img className="contact-img" src="assets/img/22-04-201927_1.jpg" /> */}
+                                    </div>
+                                </div>
+                            </Col>
+                            <Col md={4}>
+                                <div className="contact-box">
+                                    <FontAwesome
+                                        className="super-crazy-colors"
+                                        name="send"
+                                        // cssModule={faStyles}
+                                        size="3x"
+                                        // spin
+                                        style={{ textShadow: '0 4px 0 rgba(0, 0, 0, 0.1)', color: "#4764ad", }}
+                                    />
+                                    <p className="contact-title">អ៊ីមែល​​​ ៖ </p>
 
-                                        <p style={{fontSize: "20px"}}>ទូរសព្ទ័លេខ ៖ 012589111</p>
-                                        
-                                        <p style={{fontSize: "20px"}}>អ៊ីមែល​​​ ៖ </p>
-
+                                    <div className="contact-content-box">
                                         <p><a href="mailto:nfo@ccacambodia.org.kh">nfo@ccacambodia.org.kh</a></p>
                                         <p><a href="mailto:director@ccacambodia.org.kh">director@ccacambodia.org.kh</a></p>
                                         <p><a href="mailto:board@ccacambodia.org.kh">board@ccacambodia.org.kh</a></p>
                                         <p><a href="mailto:ccacambodia2019@gmail.com">ccacambodia2019@gmail.com</a></p>
+                                    </div>
                                 </div>
-                            </Col>
-                            <Col md={6} xs={6} sm={6}>
-                                {/* <img className="home-banner" style={{}} src="assets/img/22-04-201927_1.jpg"/> */}
                             </Col>
                         </Row>
                     </Col>
-
-                    <Col md={6} md={6} xs={6} sm={6}>
-                        <div className="test" style={styles.zoomIn}>
-                            {/* <img className="home-banner" src="assets/img/001.png"/> */}
-                            {/* <img className="home-banner" style={{position: "relative", top: "12em", left: "-13em", width: "600px"}} src="assets/img/22-04-201927_1.jpg"/> */}
-                        </div>
-                    </Col>
                 </Row>
             </section>
-            <br/><br/><br/>
-            <br/><br/><br/>
+            <br/><br/>
+            <br/><br/>
             <Footer />
             </div>
         )

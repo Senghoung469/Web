@@ -24,10 +24,6 @@ const styles = {
   
 class Home extends React.Component {
 
-    componentDidMount(){
-         // Wrap every letter in a span
-    }
-
     render(){
         return (
             <div style={{
@@ -40,7 +36,7 @@ class Home extends React.Component {
             <Header />
             <section className="container-fluid">
                 <Row>
-                    <Col md={6} xs={6} sm={12}>
+                    <Col md={6} xs={12} sm={12}>
                         <div className="home-text-group">
                             <div className="home-text">
                             <StyleRoot>
@@ -50,7 +46,7 @@ class Home extends React.Component {
                                 </div>
                             </StyleRoot>
                             </div>
-                            <div style={{position: "relative", top: "0", borderLeft: "500px solid #034fb3", height: "4px", marginLeft: "0.8em"}} />
+                            <div className="heightline" />
                                 <StyleRoot>
                                     <div className="test" style={styles.zoomIn}>
                                         <span className="cca">CCA </span>
@@ -60,7 +56,7 @@ class Home extends React.Component {
                         </div>
                     </Col>
 
-                    <Col md={6} xs={6} sm={6}>
+                    <Col md={6} xs={12} sm={12}>
                         <StyleRoot>
                             <div className="test" style={styles.fadeInDown}>
                                 <img className="home-banner" src="assets/img/9970.png"/>
@@ -68,11 +64,11 @@ class Home extends React.Component {
                         </StyleRoot>
                     </Col>
                 </Row>
-                <br/><br/><br/>
+                <br/><br/>
                 <Row style={{padding: "25px", borderRadius: "20px"}}>
                     <Col>
                       <Row>
-                        <Col md={6} xs={6} sm={6}>
+                        <Col md={6} xs={12} sm={12}>
                         <>
                         {/* Start WOWSlider.com BODY section */}
                         <div id="wowslider-container1">
@@ -94,20 +90,24 @@ class Home extends React.Component {
                         {/* End WOWSlider.com BODY section */}
                         </>
                         </Col>
-                        <Col md={6} xs={6} sm={6} style={{textAlign: "justify", fontFamily: "Khmer OS Bokor"}}>
+                        <Col md={6} xs={12} sm={12} style={{textAlign: "justify", fontFamily: "Khmer OS Bokor"}}>
                               <p style={{fontSize: "20px", lineHeight: "3"}}>ប្រការ១៖ គោលបំណង</p>
-                              <p style={{fontSize: "17px", marginLeft: "8%", lineHeight: "2"}}>សមាគមអ្នកប្រឹក្សាយោបលគ្រឿងសម្អាងមានគោលបំពណងដូចខាងក្រោម៖</p>
-                              <p style={{fontSize: "17px", marginLeft: "8%", lineHeight: "2"}}>- ចូលរួមសហការជាមួយអជ្ញាធរ  ស្ថាប័នពាក់ព័ន្ធ លើកកម្ពស់ និងទប់ស្កាត់គ្រឿងសម្អាងក្លែងក្លាយដែលកំពុងបំផ្លាញសុខភាពអ្នកប្រើប្រាស់។</p>
-                              <p style={{fontSize: "17px", marginLeft: "8%", lineHeight: "2"}}>- គាំទ្រដល់ផលិតផល ដែលនាំចូលដោយមានការចុះបញ្ជីត្រឹមត្រូវ និងទទួលស្គាល់ដោយមន្ទីពាក់ព័ន្ធរបស់កម្ពុជា។</p>
-                              <p style={{fontSize: "17px", marginLeft: "8%", lineHeight: "2"}}>- រកទីផ្សា កន្លែងតាំងពិព័រណ៌ និងបង្កើតទីផ្សារ សម្រាប់ដាក់តាំងលក់ផលិតផលគ្រឿងសម្អាងក្នុងស្រុក និងក្រៅស្រុក។</p>
-                              <p style={{fontSize: "17px", marginLeft: "8%", lineHeight: "2"}}>- ជួយគាំពារ និងលើកកម្ពស់ដល់អាជីវករដែលជាម្ចាស់ផលិតផលគ្រឿងសម្អាងក្មុងស្រុកឲ្យមានការទទួលស្គាល់ជាផ្លូវការពីក្រស្ថាប័នពាក់ព័ន្ធដែលជាសក្ដានុពល ឆ្ពោះទៅរកការប្រកួតប្រជែងផលិតផលិតផលគ្រឿងសម្អាងកម្ពុជានៅលើទីផ្សា។</p>
+                              <div className="option-top">
+                                <p>សមាគមអ្នកប្រឹក្សាយោបលគ្រឿងសម្អាងមានគោលបំពណងដូចខាងក្រោម៖</p>
+                                <p>- ចូលរួមសហការជាមួយអជ្ញាធរ  ស្ថាប័នពាក់ព័ន្ធ លើកកម្ពស់ និងទប់ស្កាត់គ្រឿងសម្អាងក្លែងក្លាយដែលកំពុងបំផ្លាញសុខភាពអ្នកប្រើប្រាស់។</p>
+                                <p>- គាំទ្រដល់ផលិតផល ដែលនាំចូលដោយមានការចុះបញ្ជីត្រឹមត្រូវ និងទទួលស្គាល់ដោយមន្ទីពាក់ព័ន្ធរបស់កម្ពុជា។</p>
+                                <p>- រកទីផ្សា កន្លែងតាំងពិព័រណ៌ និងបង្កើតទីផ្សារ សម្រាប់ដាក់តាំងលក់ផលិតផលគ្រឿងសម្អាងក្នុងស្រុក និងក្រៅស្រុក។</p>
+                                <p>- ជួយគាំពារ និងលើកកម្ពស់ដល់អាជីវករដែលជាម្ចាស់ផលិតផលគ្រឿងសម្អាងក្មុងស្រុកឲ្យមានការទទួលស្គាល់ជាផ្លូវការពីក្រស្ថាប័នពាក់ព័ន្ធដែលជាសក្ដានុពល ឆ្ពោះទៅរកការប្រកួតប្រជែងផលិតផលិតផលគ្រឿងសម្អាងកម្ពុជានៅលើទីផ្សា។</p>
+                              </div>
 
                               <p style={{ fontSize: "20px", lineHeight: "3"}}>ប្រការ២៖ បេសកម្ម</p>
-                              <p style={{fontSize: "17px", marginLeft: "8%", lineHeight: "2"}}>- គាំទ្រការខ្សែរសង្វាក់ផលិតផលិតផលគ្រឿងសម្អាងក្នុងស្រុក ដែលមានការទទួលស្គាល់ពូមន្ទីពិសោធន៍ជាតិ។លើការផលិតតាមបច្ចេកទេសឲ្យបានត្រឹមត្រូវតាមស្ដាងដាក្រសួងពាក់ព័ន្ធ។</p>
-                              <p style={{fontSize: "17px", marginLeft: "8%", lineHeight: "2"}}>- លើកស្ទួននូវផលិតផលក្នុងស្រុកចំពោះម្ចាស់កម្មសិទ្ធករ ដែលបានចុះបញ្ជីការទទួលស្គាល់គ្រប់ស្ថាប័នពាក់ព័ន្ធ 
-                                ក្នុងការស្វែងរកទីផ្សារ ជៀសវាងការផលិត 
-                                ឬវេចខ្ចប់ផលិតផលគ្រឿងសម្អាងក្លែងក្លាយ។</p>
-                              <p style={{fontSize: "17px", marginLeft: "8%", lineHeight: "2"}}>- ផ្ដល់​ការប្រឹក្សាផ្លូវច្បាប់ ដោះស្រាយវិវាទដែលជាហានិភ័យរវាងម្ចាស់អាជីវកម្មគ្រឿងសម្អាងស្របច្បាប់នៅកម្ពុជា។</p>
+                              <div className="option-bottom">
+                                <p>- គាំទ្រការខ្សែរសង្វាក់ផលិតផលិតផលគ្រឿងសម្អាងក្នុងស្រុក ដែលមានការទទួលស្គាល់ពូមន្ទីពិសោធន៍ជាតិ។លើការផលិតតាមបច្ចេកទេសឲ្យបានត្រឹមត្រូវតាមស្ដាងដាក្រសួងពាក់ព័ន្ធ។</p>
+                                <p>- លើកស្ទួននូវផលិតផលក្នុងស្រុកចំពោះម្ចាស់កម្មសិទ្ធករ ដែលបានចុះបញ្ជីការទទួលស្គាល់គ្រប់ស្ថាប័នពាក់ព័ន្ធ 
+                                    ក្នុងការស្វែងរកទីផ្សារ ជៀសវាងការផលិត 
+                                    ឬវេចខ្ចប់ផលិតផលគ្រឿងសម្អាងក្លែងក្លាយ។</p>
+                                <p>- ផ្ដល់​ការប្រឹក្សាផ្លូវច្បាប់ ដោះស្រាយវិវាទដែលជាហានិភ័យរវាងម្ចាស់អាជីវកម្មគ្រឿងសម្អាងស្របច្បាប់នៅកម្ពុជា។</p>
+                              </div>
                           </Col>
                       </Row>
                     </Col>

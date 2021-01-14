@@ -14,7 +14,7 @@ const styles = {
       animationName: Radium.keyframes(slideInLeft, 'slideInLeft')
     },
     zoomIn: {
-        animation: 'x 3s',
+        animation: 'x 1s',
         animationName: Radium.keyframes(zoomIn, 'zoomIn')
       },
       fadeInDown: {
@@ -34,21 +34,22 @@ class Ourwork extends React.Component {
             <div style={{
                 backgroundImage: "url('assets/img/backround.jpg')",
                 backgroundColor: "#cccccc",
-                backgroundRepeat: "no-repeat",
+                // backgroundRepeat: "no-repeat",
                 backgroundSize: "cover",
                 backgroundAttachment: "fixed"
                 }}>
             <Header />
+            <br/><br/>
             <section className="container-fluid">
                 <Row>
-                    <Col md={6}>
+                    <Col md={6} xs={12}>
                         <Row>
                             <Col className="partner">
-                                <span style={{fontSize: "50px"}}>P</span>
-                                <span>ARTNER</span>
+                                <span style={{fontSize: "50px"}}>O</span>
+                                <span>UR WORKS</span>
                             </Col>
                         </Row>
-                        <div style={{position: "relative", top: "8em", borderLeft: "500px solid #034fb3", height: "4px", marginLeft: "7.5em"}} />
+                        <div className="heightline-ourwork"/>
                         <div className="ourwork-one">
                             <p style={{fontSize: "20px", lineHeight: "3"}}>អត្ថប្រយោជន៏កាចូលជាសមាជិក</p>
                             
@@ -64,24 +65,24 @@ class Ourwork extends React.Component {
                         </div>
                     </Col>
 
-                    <Col md={6}>
+                    <Col md={6} xs={12}>
                         <StyleRoot>
                                 <div className="test" style={styles.zoomIn}>
-                                  <img className="home-banner" style={{marginTop: "20em"}} src="assets/img/002.png"/>
+                                  <img className="home-banner-ourwork ourwork-banner-top" src="assets/img/ourworkone.png"/>
                                 </div>
                         </StyleRoot>
                     </Col>
                 </Row>
                 <Row>
-                    <Col md={6}>
-                    <StyleRoot>
-                            <div className="test" style={styles.zoomIn}>
-                                <img className="home-banner" style={{marginTop: "32em"}} src="assets/img/ourworkone.png"/>
-                            </div>
+                    <Col md={6} xs={12}>
+                        <StyleRoot>
+                                <div className="test" style={styles.zoomIn}>
+                                    <img className="home-banner-ourwork ourwork-banner-bottom" src="assets/img/002.png"/>
+                                </div>
                         </StyleRoot>
                     </Col>
-                    <Col md={6}>
-                        <div className="ourwork-one" style={{position: "absolute", marginLeft: "-30px", top: "18em"}}>
+                    <Col md={6} xs={12}>
+                        <div className="ourwork-one">
                             <p style={{fontSize: "20px", lineHeight: "3"}}>ប្រការ២៖ បេសកម្ម</p>
 
                             <p>- គាំទ្រការខ្សែរសង្វាក់ផលិតផលិតផលគ្រឿងសម្អាងក្នុងស្រុក ដែលមានការទទួលស្គាល់ពូមន្ទីពិសោធន៍ជាតិ។
@@ -94,7 +95,6 @@ class Ourwork extends React.Component {
                 </Row>
             </section>
             <Footer />
-            <br/><br/><br/><br/>
             <br/><br/><br/><br/>
             </div>
         )

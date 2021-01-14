@@ -16,6 +16,7 @@ import {
     Container,
     ContainerFluid
 } from 'react-bootstrap';
+import serviceAPI from '../Service';
 
 class Header extends React.Component {
     
@@ -28,9 +29,10 @@ class Header extends React.Component {
 
     componentDidMount(){
         // Get Companies All
-        // axios.get(`${ServiceApi}/api/v1/company/1`).then( respone => {
-        //     this.setState({ companies: respone.data.data });
-        // }).catch( error =>  console.log(error))
+        axios.get(`${ServiceApi}/api/v1/company/1`).then( respone => {
+            this.setState({ companies: respone.data.data });
+            console.log(this.state.companies)
+        }).catch( error =>  console.log(error))
 
         $(document).ready(function($) {
             // site preloader -- also uncomment the div in the header and the css style for #preloader
@@ -53,18 +55,22 @@ class Header extends React.Component {
                         <Row>
                             <Col xs={12} md={12}>
                                 <Navbar bg="light" expand="lg" className="fixed-top">
-                                    <Navbar.Brand href="#home"><img className="logo-top" src="assets/img/logo/logo.jpg" /></Navbar.Brand>
+                                    {
+                                        this.state.companies.map( item => {
+                                            return <Navbar.Brand href="/home"><img className="logo-top" src={`${serviceAPI}/uploads/${item.logo}`} /></Navbar.Brand>
+                                        })
+                                    }
                                     <Navbar.Toggle aria-controls="responsive-navbar-nav" />
                                     <Navbar.Collapse id="responsive-navbar-nav">
                                         <Nav className="mr-auto"></Nav>
                                         <Nav>
-                                            <Nav.Link href="home">Home</Nav.Link>
-                                            <Nav.Link href="ourpeople">Our People</Nav.Link>
-                                            <Nav.Link href="ourwork">Our Works</Nav.Link>
-                                            <Nav.Link href="product">Products</Nav.Link>
-                                            <Nav.Link href="contact">Contact Us</Nav.Link>
-                                            <Nav.Link href="about">About Us</Nav.Link>
-                                            <Nav.Link href="publication">Publication</Nav.Link>
+                                            <Nav.Link href="/home">Home</Nav.Link>
+                                            <Nav.Link href="/ourpeople">Our People</Nav.Link>
+                                            <Nav.Link href="/ourwork">Our Works</Nav.Link>
+                                            <Nav.Link href="/product">Products</Nav.Link>
+                                            <Nav.Link href="/contact">Contact Us</Nav.Link>
+                                            <Nav.Link href="/about">About Us</Nav.Link>
+                                            <Nav.Link href="/publication">Publication</Nav.Link>
                                         </Nav>
                                     </Navbar.Collapse>
                                 </Navbar>

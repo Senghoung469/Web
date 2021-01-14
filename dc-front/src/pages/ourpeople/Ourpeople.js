@@ -8,7 +8,7 @@ class Ourpeople extends React.Component {
         return(
             <div>
             <Header />
-            <br/>
+            <br/><br/>
                 <DetailOurPeople />
             <Footer />
             </div>
