@@ -76,7 +76,7 @@ class Header extends React.Component {
                                 </Navbar>
                             </Col>
                         </Row>
-                        <ScrollUpButton
+                        {/* <ScrollUpButton
                         id="scrollTop"
                         StopPosition={0}
                         ShowAtPosition={150}
@@ -86,7 +86,7 @@ class Header extends React.Component {
                         TransitionClassName='ScrollUpButton__Toggled'
                         style={{}}
                         ToggledStyle={{}}
-                        />
+                        /> */}
                     </div>
                 </div>
             </>
