@@ -2,6 +2,7 @@ import React from 'react';
 import axios from 'axios';
 import ServiceApi from '../Service';
 import ScrollUpButton from "react-scroll-up-button";
+import ScrollToTop from "react-scroll-to-top";
 import 'bootstrap/dist/css/bootstrap.min.css';
 import $ from "jquery";
 import {
@@ -87,6 +88,7 @@ class Header extends React.Component {
                         style={{}}
                         ToggledStyle={{}}
                         /> */}
+                        <ScrollToTop smooth color="#6f00ff" />
                     </div>
                 </div>
             </>
