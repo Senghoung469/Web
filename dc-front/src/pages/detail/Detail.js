@@ -43,15 +43,20 @@ class Detail extends React.Component {
                             return <div className="category-border-content">
                             <div className="category-detail category">
                                 <div className="category-img">
-                                    <img className="img-responsive" width="338px" height="285px" src={`${ServiceApi}/uploads/${item.thumbnail}`} alt />
+                                    <img className="img-product-detail" width="50%" height="auto" src={`${ServiceApi}/uploads/${item.thumbnail}`} alt />
                                 </div>
                                 <div className="category-text">
                                     <h4><a href={`/detail/${item.id}`}>{ item.title }</a></h4>
                                     <span style={ { color: "orange" } }>ID: {item.barcode}</span>&nbsp;&nbsp;&nbsp;
-                                    <span className="art"><i class="fa fa-calendar" aria-hidden="true"></i> Date: <Moment format="YYYY/MM/DD hh:mm:ss">{ item.createdAt }</Moment></span>
-                                    <p>{item.description}</p>
+                                    <p className="art">
+                                        <i class="fa fa-calendar" aria-hidden="true"></i> Date: <Moment format="YYYY/MMM/DD">{ item.createdAt }</Moment>
+                                        &nbsp;&nbsp;&nbsp;&nbsp;
+                                        <i class="fa fa-clock-o" aria-hidden="true"></i> Time: <Moment format="hh:mm:ss A">{ item.createdAt }</Moment>
+                                    </p>
+                                    
                                     <hr/>
-                                    {/* <div className="quote"><p><i className="fa fa-quote-left" />It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem<i className="fa fa-quote-right" /></p></div> */}
+                                    <h5><a href="#">Description</a></h5>
+                                    <div className="quote"><p><p>{item.description}</p></p></div>
                                     <p className="category-text-content"><div dangerouslySetInnerHTML={{__html: item.body }}></div></p>
                                     <div className="read-more-more clearfix"></div>
                                 </div>
@@ -67,7 +72,7 @@ class Detail extends React.Component {
                                     <div className="popular-post-border-content">
                                     <div className="popular-post-content">
                                         <div className="popular-post-title">
-                                        <h4>New posts</h4>
+                                        <h5>New posts</h5>
                                         </div>
                                         {
                                             this.state.popularPost.map( item => {
@@ -78,7 +83,11 @@ class Detail extends React.Component {
                                                             </a>
                                                         </div>
                                                         <div className="popular-post-single-text">
-                                                            <i class="fa fa-calendar" aria-hidden="true"></i> Date: <Moment format="YYYY/MMM/DD hh:mm:ss A">{ item.createdAt }</Moment>
+                                                        <p className="art">
+                                                            <i class="fa fa-calendar" aria-hidden="true"></i> Date: <Moment format="YYYY/MMM/DD">{ item.createdAt }</Moment>
+                                                            &nbsp;&nbsp;&nbsp;&nbsp;
+                                                            <i class="fa fa-clock-o" aria-hidden="true"></i> Time: <Moment format="hh:mm:ss A">{ item.createdAt }</Moment>
+                                                        </p>
                                                             <br/><br/>
                                                             <a href={`/detail/${item.id}`}><h6>{item.title}</h6></a>
                                                         </div>

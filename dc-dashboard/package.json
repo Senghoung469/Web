@@ -77,7 +77,7 @@
   "scripts": {
     "start": "serve -s build -l 82",
     "build": "react-scripts build",
-    "test": "react-scripts test",
+    "test": "react-scripts start",
     "test:cov": "npm test -- --coverage --watchAll=false",
     "test:debug": "react-scripts --inspect-brk test --runInBand",
     "eject": "react-scripts eject",

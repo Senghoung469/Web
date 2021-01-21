@@ -42,20 +42,28 @@ class ProductPost extends React.Component {
                             this.state.posts.map( item => {
                                 return <div className="category-detail category-border-content section-padding">
                                     <div className="row">
-                                    <div className="col-md-6 col-sm-6">
+                                    <div className="col-md-4 col-sm-6">
                                     <div className="category-img">
                                         <img className="img-fluid" width="338px" height="245px" src={`${ServiceApi}/uploads/${item.thumbnail}`} alt />
                                         <div className="category-overlay"></div>
                                     </div>
                                     </div>
-                                    <div className="col-md-6 fix col-sm-6">
+                                    <div className="col-md-8 fix col-sm-6">
                                         <div className="video-content-text">
                                         <h5><a href={`/detail/${item.id}`}>{item.title}</a></h5>
-                                        <br/>
-                                        <span class="art">{item.description}</span>
-                                        <p className="art"><i class="fa fa-calendar" aria-hidden="true"></i> Date: <Moment format="YYYY/MMM/DD hh:mm:ss A">{ item.createdAt }</Moment></p>
-                                        <div className="category-link"><a href={`/detail/${item.id}`}>view more</a></div>
                                         </div>
+
+                                        <div className="video-content-text">
+                                        <span class="art">{item.description}</span>
+                                        <br/><br/>
+                                        <p className="art">
+                                            <i class="fa fa-calendar" aria-hidden="true"></i> Date: <Moment format="YYYY/MMM/DD">{ item.createdAt }</Moment>
+                                            &nbsp;&nbsp;&nbsp;&nbsp;
+                                            <i class="fa fa-clock-o" aria-hidden="true"></i> Time: <Moment format="hh:mm:ss A">{ item.createdAt }</Moment>
+                                        </p>
+                                        </div>
+
+                                        <div className="category-link"><a type="bottom" href={`/detail/${item.id}`}>View Detail</a></div>
                                     </div>
                                     </div>
                                 </div>
@@ -74,7 +82,7 @@ class ProductPost extends React.Component {
                                     <div className="popular-post-border-content">
                                     <div className="popular-post-content">
                                         <div className="popular-post-title">
-                                        <h4>New posts</h4>
+                                        <h5>New posts</h5>
                                         </div>
                                         {
                                             this.state.popularPost.map( item => {
@@ -85,7 +93,11 @@ class ProductPost extends React.Component {
                                                             </a>
                                                         </div>
                                                         <div className="popular-post-single-text">
-                                                            <i class="fa fa-calendar" aria-hidden="true"></i> Date: <Moment format="YYYY/MMM/DD hh:mm:ss A">{ item.createdAt }</Moment>
+                                                        <p className="art">
+                                                            <i class="fa fa-calendar" aria-hidden="true"></i> Date: <Moment format="YYYY/MMM/DD">{ item.createdAt }</Moment>
+                                                            &nbsp;&nbsp;&nbsp;&nbsp;
+                                                            <i class="fa fa-clock-o" aria-hidden="true"></i> Time: <Moment format="hh:mm:ss A">{ item.createdAt }</Moment>
+                                                        </p>
                                                             <br/><br/>
                                                             <a href={`/detail/${item.id}`}><h6>{item.title}</h6></a>
                                                         </div>

@@ -55,7 +55,7 @@ class Header extends React.Component {
                     <div className="header-top">
                         <Row>
                             <Col xs={12} md={12}>
-                                <Navbar bg="light" expand="lg" className="fixed-top">
+                                <Navbar bg="#ffffff" expand="lg" className="fixed-top">
                                     {
                                         this.state.companies.map( item => {
                                             return <Navbar.Brand href="/home"><img className="logo-top" src={`${serviceAPI}/uploads/${item.logo}`} /></Navbar.Brand>

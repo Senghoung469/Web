@@ -35,7 +35,7 @@
   "scripts": {
     "start": "serve -s build -l 80",
     "build": "react-scripts build",
-    "test": "react-scripts test",
+    "test": "PORT=7000 react-scripts start",
     "eject": "react-scripts eject"
   },
   "eslintConfig": {

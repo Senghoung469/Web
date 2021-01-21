@@ -71,7 +71,7 @@ class Contact extends React.Component {
                                         className="super-crazy-colors"
                                         name="map"
                                         // cssModule={faStyles}
-                                        size="3x"
+                                        size="2x"
                                         // spin
                                         style={{ textShadow: '0 4px 0 rgba(0, 0, 0, 0.1)', color: "#4764ad" }}
                                     />
@@ -87,7 +87,7 @@ class Contact extends React.Component {
                                         className="super-crazy-colors"
                                         name="phone"
                                         // cssModule={faStyles}
-                                        size="3x"
+                                        size="2x"
                                         // spin
                                         style={{ textShadow: '0 4px 0 rgba(0, 0, 0, 0.1)', color: "#4764ad" }}
                                     />
@@ -104,7 +104,7 @@ class Contact extends React.Component {
                                         className="super-crazy-colors"
                                         name="send"
                                         // cssModule={faStyles}
-                                        size="3x"
+                                        size="2x"
                                         // spin
                                         style={{ textShadow: '0 4px 0 rgba(0, 0, 0, 0.1)', color: "#4764ad", }}
                                     />

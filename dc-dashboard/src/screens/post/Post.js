@@ -25,9 +25,9 @@ class Post extends React.Component {
     }
     fields = [
         { key: 'id', label: 'ID', _style: { width: '10%' } },
-        { key: 'title', label: 'Product Name', _style: { width: '20%'} },
+        { key: 'title', label: 'Product Name', _style: { width: '15%'} },
+        { key: 'thumbnail', label: 'Thumbnail', _style: { width: '5%'} },
         { key: 'barcode', label: 'Barcode', _style: { width: '10%'} },
-        { key: 'thumbnail', label: 'Thumbnail', _style: { width: '10%'} },
         // { key: 'createdBy', label: 'Recorder', _style: { width: '10%'} },
         { key: 'createdAt', label: 'Record Date',  _style: { width: '5%'} },
         // { key: 'updatedBy', label: 'Modifier', _style: { width: '10%'} },

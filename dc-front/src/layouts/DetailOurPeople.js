@@ -25,12 +25,12 @@ class DetailOurPeople extends React.Component {
                             <div className="heightline-ourpeople"/>
                             <div className="ourpeople-area">
                             <Row>
-                                <Col md={6} xs={12}>
+                                <Col md={4} xs={12} lg={4}>
                                     <div>
                                         <img className="img-thumbnail-ourpeople" src="/assets/img/photo.jpg" alt />
                                     </div>
                                 </Col>
-                                <Col md={6} xs={12}> 
+                                <Col md={8} xs={12} lg={8}>
                                     <div className="ourpeople-content" style={{fontFamily: "Khmer OS Bokor"}}>
                                         <p className="ourpeople-title">តេង ប៊ុនថុន</p>
                                         <div className="ourpeople-group-thumnail">

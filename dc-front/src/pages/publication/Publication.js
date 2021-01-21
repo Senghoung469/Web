@@ -15,7 +15,7 @@ const styles = {
       animationName: Radium.keyframes(slideInLeft, 'slideInLeft')
     },
     zoomIn: {
-        animation: 'x 1s',
+        animation: 'x 0s',
         animationName: Radium.keyframes(zoomIn, 'zoomIn')
       },
       fadeInDown: {

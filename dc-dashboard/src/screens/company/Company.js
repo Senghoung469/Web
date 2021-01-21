@@ -23,7 +23,7 @@ class Company extends React.Component {
     fields = [
         { key: 'id', label: 'ID', _style: { width: '10%' } },
         { key: 'name', label: 'Name', _style: { width: '20%'} },
-        { key: 'logo', label: 'Logo', _style: { width: '10%'} },
+        { key: 'logo', label: 'Logo', _style: { width: '20%'} },
         { key: 'phone', label: 'Phone', _style: { width: '10%'} },
         { key: 'email', label: 'Email', _style: { width: '10%'} },
         // { key: 'createdBy', label: 'Recorder', _style: { width: '10%'} },

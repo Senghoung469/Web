@@ -8,6 +8,9 @@
     height: auto;
     background-color: #fff !important;
 }
+a {
+    text-decoration: none !important;
+}
 #preloader { 
     position: fixed; 
     left: 0; 
@@ -171,6 +174,7 @@
         top: -10px;
         padding-top: 30px;
         padding-left: 80px;
+        color: gray;
     }
     .img-thumbnail-ourpeople {
         width: 250px;
@@ -179,6 +183,12 @@
         position: relative;
         top: 34px;
         left: 20px;
+    }
+    .ourpeople-group-thumnail {
+        padding-left: 78px;
+        position: relative;
+        top: -3em;
+        color: gray;
     }
     .ourpeople-area{
         background: white;
@@ -289,7 +299,7 @@
         background: white;
     }
     .section-padding {
-        margin-bottom: 60px;
+        margin-bottom: 9px;
     }
       .category-border-content {
         border: 1px solid #E5E3E3;
@@ -333,7 +343,7 @@
     .popular-post-single-text {
         padding-left: 110px;
         margin-top: 5px;
-        padding: 15px;
+        padding: -1px;
     }
     .popular-post-border-content {
         border: 1px solid #e5e3e3;
@@ -488,11 +498,13 @@
         top: 38px;
         padding-top: 30px;
         padding-left: 55px;
+        color: gray;
     }
     .ourpeople-group-thumnail {
         font-size: 16px;
         padding-left: 55px;
         line-height: 1.5;
+        color: gray;
     }
     .ourpeople-area{
         background: white;
@@ -566,14 +578,16 @@
         top: -8px;
         padding-top: 30px;
         padding-left: 0px;
-        right: 3.4em;
+        left: 1.8em;
+        color: gray;
     }
     .ourpeople-group-thumnail {
         font-size: 16px;
         padding-left: 55px;
         line-height: 1.5;
         position: relative;
-        right: 9em;
+        /* right: 9em; */
+        color: gray;
     }
     .ourpeople-area {
         background: white;
@@ -680,7 +694,7 @@
         background: white;
     }
     .section-padding {
-        margin-bottom: 60px;
+        margin-bottom: 9px;
     }
       .category-border-content {
         border: 1px solid #E5E3E3;
@@ -724,7 +738,7 @@
     .popular-post-single-text {
         padding-left: 110px;
         margin-top: 5px;
-        padding: 15px;
+        padding: -1px;
     }
     .popular-post-border-content {
         border: 1px solid #e5e3e3;
@@ -882,11 +896,16 @@
         top: 8px;
         padding-top: 30px;
         padding-left: 55px;
+        left: 6em;
+        color: gray;
     }
     .ourpeople-group-thumnail {
         font-size: 16px;
-        padding-left: 55px;
+        /* padding-left: 55px; */
         line-height: 1.5;
+        position: relative;
+        left: 15em;
+        color: gray;
     }
     .ourpeople-area{
         background: white;
@@ -994,7 +1013,7 @@
         background: white;
     }
     .section-padding {
-        margin-bottom: 60px;
+        margin-bottom: 9px;
     }
       .category-border-content {
         border: 1px solid #E5E3E3;
@@ -1038,7 +1057,7 @@
     .popular-post-single-text {
         padding-left: 110px;
         margin-top: 5px;
-        padding: 15px;
+        padding: -1px;
     }
     .popular-post-border-content {
         border: 1px solid #e5e3e3;
@@ -1225,7 +1244,7 @@
 
     /* ourpeople screen  */
     .img-thumbnail-ourpeople {
-        width: 255px;
+        width: 280px;
         align-items: center;
         padding-left: 59px;
         position: relative;
@@ -1249,14 +1268,14 @@
         top: -8px;
         padding-top: 30px;
         padding-left: 0px;
-        right: 3em;
+        right: -5em;
     }
     .ourpeople-group-thumnail {
         font-size: 16px;
         padding-left: 55px;
         line-height: 1.5;
         position: relative;
-        right: 9em;
+        right: -6em;
     }
     .ourpeople-area {
         background: white;
@@ -1340,9 +1359,9 @@
         margin-top: 20px;
     }
     .contact-content-box {
-        font-size: 15px;
+        font-size: 20px;
         line-height: 1.8;
-    }    
+    }   
     .contact-img{
         width: 100%;
     }
@@ -1364,7 +1383,7 @@
         background: white;
     }
     .section-padding {
-        margin-bottom: 60px;
+        margin-bottom: 9px;
     }
       .category-border-content {
         border: 1px solid #E5E3E3;
@@ -1408,7 +1427,7 @@
     .popular-post-single-text {
         padding-left: 110px;
         margin-top: 5px;
-        padding: 15px;
+        padding: -1px;
     }
     .popular-post-border-content {
         border: 1px solid #e5e3e3;
@@ -1423,6 +1442,12 @@
         height: auto;
         padding: 10px;
     }
+
+    /* img-fluid {
+    max-width: 100%;
+    height: auto;
+    box-shadow: 0px 0px 10px #cccc;
+} */
     .art {
         font-family: "Khmer Os bokor";
         color: #909090;
@@ -1430,13 +1455,17 @@
         -webkit-transition:0.5s;
                 transition:0.5s
     }
-    .category-img > img {
-        width: 100%;
-        height: 1%;
-    }
+    /* .category-img > img {
+        max-width: 50%;
+    } */
     .category-img {
         position: relative;
+        box-shadow: 0px 0px 10px #cccc;
     }
+    .img-product-detail{
+        margin-left: 25%;
+    }
+
     .category-img:hover .category-overlay {
         opacity: 0.6;
         filter: alpha(opacity=60);
